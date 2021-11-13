@@ -135,7 +135,24 @@ img {
 }
 .points-sq {
     width: 210px;
-
+}
+.btn.small {
+    padding: .7rem 1.8rem;
+    font-size: 1rem;
+}
+.btn {
+    display: inline-block;
+    padding: .85rem 2rem;
+    background-color: var(--main-color);
+    color: var(--light-color);
+    border-radius: 2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s;
+}
+.btn:hover {
+    background-color: var(--dark-main-color);
 }
 
 /* ===== END GENEREAL STYLES =====*/
@@ -172,7 +189,7 @@ nav .container {
     display: inline-block;
     padding: .9rem 1.2rem;
     color: var(--dark-color);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1;
@@ -206,25 +223,9 @@ nav .container {
 .header-content .text {
     margin: 2.15rem 0;
 }
-.btn {
-    display: inline-block;
-    padding: .85rem 2rem;
-    background-color: var(--main-color);
-    color: var(--light-color);
-    border-radius: 2rem;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: .3s;
-}
-.btn:hover {
-    background-color: var(--dark-main-color);
-}
-
 .header-content .image .img-element {
     max-width: 500px;
 }
-
 header .points1{
     width: 420px;
     bottom: -75px;
@@ -267,7 +268,6 @@ header .triangle {
     right: 12%;
     top: 50%;
 }
-
 .letters {
     position: absolute;
     width: 13.5%;
@@ -344,10 +344,6 @@ header .triangle {
     font-size: 1.15rem;
     margin: 1.8rem 0;
 }
-.btn.small {
-    padding: .7rem 1.8rem;
-    font-size: 1rem;
-}
 .services .points1 {
     bottom: -50px;
     left: -125px;
@@ -361,11 +357,101 @@ header .triangle {
     pointer-events: none;
 }
 
-
-
 /* ===== END SERVICES =====*/
 
 
+/* ===== PORTFOLIO =====*/
+
+.portfolio {
+    position: relative;
+    width: 100%;
+    min-height: 1200px;
+}
+
+.background-bg {
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+}
+.portfolio .title,
+.portfolio .title::before {
+    color: var(--light-color);
+}
+.portfolio .title::after{
+    background-color: var(--dark-main-color);
+}
+.filter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.filter-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: .45rem .4rem;
+    padding: .85rem 1.8rem;
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: .3s;
+    font-weight: 600;
+}
+.filter-btn.active {
+    background-color: var(--light-color);
+    color: var(--main-color);
+}
+.grid {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.grid-item {
+    width: 33.33%;
+    padding: 1rem 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+.gallery-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    height: 330px;
+    width: 100%;
+}
+.gallery-image img {
+    position: absolute;
+    height: 115%;
+    width: initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.gallery-image .img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: var(--light-color);
+    background-color: rgb(20, 100, 219, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ===== END PORTFOLIO =====*/
 
 
 
